@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./global/global.colors.css" />
     <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
-    <link rel="icon" href="./src/images/icons/icon.png" type="image/x-icon">
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Ovo&family=Oxygen+Mono&display=swap');
 
@@ -28,16 +28,11 @@
             -webkit-text-fill-color: transparent; 
             background-clip: text; 
             color: transparent;
-            text-align: center;
             margin: 0;
-            /* margin-left: auto;
-            margin-right: auto; */
         }
 
         .nickname {
             margin: 0;
-            /* margin-left: auto;
-            margin-right: auto; */
             width: fit-content;
         }
 
@@ -50,6 +45,7 @@
             margin-top: 100px;
             grid-template-columns: repeat(3, 1fr);
             font-family: "Oxygen Mono", monospace;
+            margin-bottom: 70px;
         }
 
         .block {
@@ -67,6 +63,11 @@
             cursor: pointer;
             transition: 0.1s ease;
             user-select: none;
+            margin: 0;
+        }
+
+        .block h1 {
+            /* margin: 0; */
         }
 
         .block:hover {
@@ -114,7 +115,6 @@
         }
 
         .header {
-            /* width: 80%; */
             z-index: 999;
         }
 
@@ -166,6 +166,10 @@
                 width: 98%;
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .header {
+                width: 90%;
+            }
         }
 
         @media (max-width: 1000px) {
@@ -188,6 +192,12 @@
 
             .block img {
                 width: 70%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                width: 100%;
             }
         }
     </style>
@@ -221,7 +231,7 @@
                 <source src="./videos/Monte.mp4" type="video/mp4">
             </video>
             <h1>Monte Video</h1>
-            <span>An online service that lets you easily organize your important data—such as music, videos, and photos—into collections and share them in chats.</span>
+            <span>The TikTok video showcases a hair‑texturizing tool. In the clip, a VFX overlay selects a hairstyle from the film F1 with Brad Pitt, and James Edward recreates it using MONTE.</span>
         </div>
         <div class="block" style="background: #0C0822;">
             <img src="./images/instend.png" draggable="false" />
@@ -231,10 +241,10 @@
 
         <div class="block" style="background: #151522;">
             <img src="./images/3D Scene.png" draggable="false" />
-            <h1>3D Scene</h1>
-            <span>An online service that lets you easily organize your important data—such as music, videos, and photos—into collections and share them in chats.</span>
+            <h1>Dystopian Entry Corridor</h1>
+            <span>This scene was created in Blender and Adobe Photoshop. The surreal corridor, floating objects, graffiti, and glowing doorway work together to evoke a sense of mystery.</span>
         </div>
-        <div class="block" style="background: #D1D1DF;">
+        <div class="block" style="background: #7E7E91;">
             <div style="position: relative; width: 70%; height: auto;">
                 <video style="position: absolute; width: calc(100% - 8px); top: 4px; left: 4px; z-index: 1;" autoplay loop muted>
                     <source src="./videos/Itransition Forms.mp4" style="width: 100%;" type="video/mp4">
@@ -242,9 +252,9 @@
                 <img style="width: 100%; width: 100%; object-fit: contain; top: 0; left: 0;" src="./images/apple-display.png" draggable="false" />
             </div>
             <h1>Forms</h1>
-            <span>The web application for creating, editing and filling out forms. With authentification according to the RFC 7519 standart, beautiful & responsive user interface and high-efficient database.</span>
+            <span>The web application for creating, editing and filling out forms. With RFC 7519 authentification, beautiful & responsive user interface and high-efficient database.</span>
         </div>
-        <div class="block" style="background: #DFD1D1;">
+        <div class="block" style="background: #B29C9C;">
             <div style="position: relative; width: 70%; height: auto;">
                 <video style="position: absolute; width: calc(100% - 8px); top: 4px; left: 4px; z-index: 1;" autoplay loop muted>
                     <source src="./videos/Itransition Presentations.mp4" style="width: 100%;" type="video/mp4">
@@ -256,9 +266,9 @@
         </div>
 
         <div class="block" style="background: #151522;">
-            <img style="width: 100%; width: 100%; object-fit: contain; top: 0; left: 0;" src="./images/apple-display.png" draggable="false" />
-            <h1>Game Prototype</h1>
-            <span>An online service that lets you easily organize your important data—such as music, videos, and photos—into collections and share them in chats.</span>
+            <img style="width: 100%; width: 100%; object-fit: contain; top: 0; left: 0;" src="./images/The Lighthouse.png" draggable="false" />
+            <h1>The Lighthouse</h1>
+            <span>You take on the role of a lighthouse keeper, uncovering secrets through puzzles and using your inventory to stay hidden from the ghosts that roam the tower.</span>
         </div>
         <div class="block" style="background: #2A98CF;">
             <div style="position: relative; width: 70%; height: auto;">
@@ -267,13 +277,21 @@
                 </video>
                 <img style="width: 100%; width: 100%; object-fit: contain; top: 0; left: 0;" src="./images/apple-tv-device-mockup.png" draggable="false" />
             </div>
-            <h1>Game Prototype</h1>
-            <span>You run a restaurant, serve customers, and cook the right meals to match their orders. The faster and more accurate you are, the more money you earn. Simple idea, built with love, stress, and way too much coffee.</span>
+            <h1>The Restaurateur</h1>
+            <span>You run a restaurant, serve customers, and cook the right meals to match their orders. The faster and more accurate you are, the more money you earn.</span>
         </div>
         <div class="block" style="background: rgba(0, 0, 0, 0.04);">
+            <img style="width: 100%; width: 100%; object-fit: contain; top: 0; left: 0;" src="./images/AI.png" draggable="false" />
             <h1 style="color: black;">Audio Separator AI</h1>
-            <span style="color: black;">An online service that lets you easily organize your important data—such as music, videos, and photos—into collections and share them in chats.</span>
+            <span style="color: black;">An AI tool designed to remove audio noise and separate your mix into clean, individual tracks—vocals, guitar, and beyond.</span>
         </div>
     </div>
+    <div class="header" style="justify-content: center;">
+        <div class="logo">© Copyright Andreev S, 2026 - All right</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
